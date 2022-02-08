@@ -1,5 +1,5 @@
 # Welcome to 100 days of code day 10. I completed this project without the use
-# of the udemy course. Therefore my implementation is a bit different than what
+# of the udemy course. Therefore, my implementation is a bit different from what
 # you would find on the course. However, the program works as intended without
 # bugs so enjoy this python calculator
 
@@ -22,7 +22,7 @@ def subtract(first_number, second_number):
     total = first_number - second_number
     return total
 
-# Multipliication
+# Multiplication
 def multi(first_number, second_number):
     """Multiplies two given numbers together"""
     total = first_number * second_number
@@ -34,15 +34,15 @@ def division(first_number, second_number):
     total = first_number / second_number
     return total
 
-# Calulation function
+# Calculation function
 def calculator():
     """Logic for choosing operation functions and playthrough"""
 
-# Inputs for first number and italizing a play state
+# Inputs for first number and initializing a play state
     first_number = float(input("Enter your first number\n"))
     playing = True
 
-# while loop for playthough
+# while loop for play through
     while playing:
         operator = input("Choose your operator!\n +\n -\n *\n /\n")
         second_number = float(input("Enter your next number\n"))
@@ -62,7 +62,7 @@ def calculator():
             print(f"{first_number} {operator} {second_number} = {answer}")
 
 # Play again and use previous calculation logic
-        calc_again = input(f"Would you like to continue calcuating with {answer}?\n").lower()
+        calc_again = input(f"Would you like to continue calculating with {answer}?\n").lower()
         if calc_again == "yes":
             first_number = answer
         else:
@@ -72,5 +72,5 @@ def calculator():
             else:
                 playing = False
 
-# Calling the function to start the actual calutation program
+# Calling the function to start the actual calculation program
 calculator()
