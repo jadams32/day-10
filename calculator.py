@@ -36,7 +36,7 @@ def division(first_number, second_number):
 
 # Calculation function
 def calculator():
-    """Logic for choosing operation functions and playthrough"""
+    """Logic for choosing operation functions and play through"""
 
 # Inputs for first number and initializing a play state
     first_number = float(input("Enter your first number\n"))
